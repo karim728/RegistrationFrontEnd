@@ -1,0 +1,36 @@
+
+
+  <div class="container">
+      <form class="example-form"  #formDirective="ngForm">
+          <h1>User Registration</h1>
+    <mat-form-field class="example-full-width">
+      <mat-label>First Name</mat-label>
+      <input type="text" matInput placeholder="John"  [(ngModel)]="firstName" name="first">
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+        <mat-label>Last Name</mat-label>
+        <input matInput placeholder="Ex. Doe"  [(ngModel)]="lastName" name="last">
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+        <mat-label>Email</mat-label>
+        <input matInput placeholder="Ex. JohnDoe@gmail.com"  [(ngModel)]="email" name="email">
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+        <mat-label>Username</mat-label>
+        <input matInput placeholder="Ex. EvilBabayaga"  [(ngModel)]="userName" name="user">
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+        <mat-label>Password</mat-label>
+        <input type="password" matInput placeholder="Ex. xxxxxxxxx"  [(ngModel)]="password" name="pass">
+      </mat-form-field>
+
+      <div class="btn">
+        <button mat-raised-button (click)="submit($event)">Register</button>
+      </div>
+  </form>
+  </div>
+
+  

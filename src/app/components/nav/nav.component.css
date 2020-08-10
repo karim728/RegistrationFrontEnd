@@ -1,0 +1,25 @@
+#nav{
+    display: flex;
+    width: 100%;
+    background-color: #6666FF;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+ul{
+    display: flex;
+    width: inherit;
+    text-decoration: none;
+    list-style-type: none;
+    justify-content: flex-end;
+}
+
+li{
+    
+    margin-right: 50px;
+}
+
+img{
+    width: 120px;
+    
+}
